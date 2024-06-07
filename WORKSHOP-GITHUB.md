@@ -32,7 +32,7 @@ If you have forked before, you can update your repository as follows:
         git fetch origin
         git pull origin main
         ```
-## Paso 1 - Run the initial GitHub Actions pipeline
+## Step 1 - Run the initial GitHub Actions pipeline
 1. Open the project in GitHub
 2. Click on 'Actions' in the top menu.
 3. Click on 'Configure' that appears in the selection.
@@ -53,11 +53,11 @@ If you have forked before, you can update your repository as follows:
 
 1. Open file .github/workflows/pylint.yml
 2. Modify the following part to install pytest and coverage
-```
-run: |
+   ```
+   run: |
         python -m pip install --upgrade pip
         pip install pylint pytest coverage
-```
+   ```
 3. Add new step by adding this line at the bottom of the file
    ```
    - name: Test with pytest
@@ -66,7 +66,10 @@ run: |
         coverage run -m pytest test.py
         coverage report
    ```
-4. Configure "Build":
+   
+## Step 3 – Add build
+
+1. Configure "Build":
    ```
    - name: Install pypa/build
       run: >-
