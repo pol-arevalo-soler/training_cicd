@@ -12,15 +12,11 @@ This workshop, through a Python project, seeks to show how a CI/CD pipeline can 
 
 1. To get started, fork this repository into your GitLab account.
 If you have forked before, you can update your repository as follows:
-    - From the UI: https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html#from-the-ui
-    ! [Fork from UI] (https://docs.gitlab.com/ee/user/project/repository/img/update-fork_v16_6.png)
-
-    - Or by command line:
-        ```bash
-        git remote add upstream https://<repositorio-workshop>/workshop-cicd.git
-        git fetch upstream
-        git pull upstream master
-        ```
+    ```bash
+    git remote add upstream https://<repositorio-workshop>/workshop-cicd.git
+    git fetch upstream
+    git pull upstream master
+   ```
 2. The next step is to clone or update your repository on your local machine. To do this, run the following commands in your terminal:
     - Clone repository:
         ```bash
