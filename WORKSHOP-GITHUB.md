@@ -16,7 +16,7 @@ If you have forked before, you can update your repository as follows:
     ! [Fork from UI] (https://docs.gitlab.com/ee/user/project/repository/img/update-fork_v16_6.png)
 
     - Or by command line:
-        '''Bash
+        ```bash
         git remote add upstream https://<repositorio-workshop>/workshop-cicd.git
         git fetch upstream
         git pull upstream master
@@ -38,14 +38,16 @@ If you have forked before, you can update your repository as follows:
 3. Click on 'Configure' that appears in the selection.
 
 ![Initial Actions](./images/GitHub_Actions.jpg)
-CAPTURA_1
+
 4. Before using the "commit" button, edit the line shown in this image and remove "3.8 and 3.9" (you don't need to check this code in 3 different versions of python with 3.10 is enough)
+   
 ![Initial Python](./images/GitHub_Python.jpg)
-CAPTURA_2
-5. Press the "commit" button
-6. Click on 'Actions' in the top menu again and if everything Works right you will see:
+
+6. Press the "commit" button
+7. Click on 'Actions' in the top menu again and if everything Works right you will see:
+   
 ![Initial firstAction](./images/GitHub_firstsAction.jpg)
-CAPTURA_3
+
 
 ## Step 2 – Add test and coverage
 
@@ -57,16 +59,16 @@ run: |
         pip install pylint pytest coverage
 ```
 3. Add new step by adding this line at the bottom of the file
-    ```
-- name: Test with pytest
+   ```
+   - name: Test with pytest
       run: |
         pytest test.py
         coverage run -m pytest test.py
         coverage report
-```
+   ```
 4. Configure "Build":
-```
-- name: Install pypa/build
+   ```
+   - name: Install pypa/build
       run: >-
         python3 -m
         pip install
@@ -78,4 +80,5 @@ run: |
       uses: actions/upload-artifact@v3
       with:
         name: python-package-distributions
-        path: dist/   
+        path: dist/
+   ```
