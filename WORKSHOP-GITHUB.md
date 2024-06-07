@@ -35,7 +35,7 @@ If you have forked before, you can update your repository as follows:
 
 ![Initial Actions](./images/GitHub_Actions.jpg)
 
-4. Before using the "commit" button, edit the line shown in this image and remove "3.8 and 3.9" (you don't need to check this code in 3 different versions of python with 3.10 is enough)
+4. Edit the line shown in this image and remove "3.8 and 3.9" (you don't need to check this code in 3 different versions of python with 3.10 is enough)
    
 ![Initial Python](./images/GitHub_Python.jpg)
 
