@@ -20,7 +20,7 @@ If you have forked before, you can update your repository as follows:
 2. The next step is to clone or update your repository on your local machine. To do this, run the following commands in your terminal:
     - Clone repository:
         ```bash
-        git clone https://<your-repository>/workshop-cicd.git
+        git clone https://<your-repository>/training_cicd.git
         cd workshop-cicd
         ```
      - Or update repository:
