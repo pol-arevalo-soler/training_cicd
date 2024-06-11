@@ -13,7 +13,7 @@ This workshop, through a Python project, seeks to show how a CI/CD pipeline can 
 1. To get started, fork this repository into your GitLab account.
 If you have forked before, you can update your repository as follows:
     ```bash
-    git remote add upstream https://<repositorio-workshop>/workshop-cicd.git
+    git remote add upstream https://<repositorio-workshop>/training_cicd.git
     git fetch upstream
     git pull upstream master
    ```
